@@ -13,7 +13,7 @@ Soju lets you explore music from Spotify on any device easily. Fetch a track's a
 To get a direct link, you can also add the url to a `?s=` query parameter like so:
 
 ```
-https://playsoju.netlify.app/?s=SPOTIFYLINKHERE
+https://soju.▉▉▉▉▉.▉▉/?s=SPOTIFYLINKHERE
 ```
 
 Here's a list of query parameters. Many of these can be strung together using `?s=str&sm=str&method=str`.
@@ -23,7 +23,7 @@ Here's a list of query parameters. Many of these can be strung together using `?
 |?s=|str|Jump straight to processing a Spotify url|
 |?sa=|bool|Run all processing methods for an `?s=` url<br>*see `?method=` for more info*|
 |?sm=|str|Processing method for an `?s=` url<br>*see `?method=` for more info*|
-|?method=|str|Set default processing method for the browsing session<br><ul><li>**api** *(default)*: Uses Spotify media embed to retrieve media</li><li>**embed**: Loads the Spotify media embed directly (fallback)</li></ul>|
+|?method=|str|Set default processing method for the browsing session<br><ul><li>**api** *(default)*: Uses Spotify Web API to fetch data</li><li>**embed**: Loads the Spotify media embed directly (fallback)</li></ul>|
 
 <br />
 

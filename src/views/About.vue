@@ -7,12 +7,10 @@
       <p class="text-center text-gray-300 mb-t2">Soju is not endorsed by Spotify. All Spotify assets are retrieved using an authenticated connection to the Spotify Web API, or are unmodified public-facing websites.</p>
       <p class="text-center text-gray-300 mb-t2">Soju is open source software licenced under the GPLv3, and supported by maintainers who keep Soju instances running.</p>
       <div class="flex flex-wrap items-center justify-center text-center mt-t4 gap-4">
-        <a :href="instanceInfo.hosterContact" rel="noopener" target="_blank">
 
-          <!-- NOTE: To add your info on the site, please update `main.js` -->
-          
-          <div class="inline-flex text-center items-center justify-center px-4 py-3 text-base font-medium leading-6 transition duration-300 bg-2f2f2f hover:bg-282828 rounded-md cursor-pointer">Maintained by {{ instanceInfo.hosterName }}</div>
-        </a>
+        <!-- NOTE: To add your info on the site, please update `main.js` -->
+        
+        <div class="inline-flex text-center items-center justify-center px-6 py-2 text-base font-medium leading-6 transition duration-300 border-323232 border-2 rounded-md cursor-default">Maintained by {{ instanceInfo.hosterName }}</div>
       </div>
       <div class="flex flex-wrap items-center justify-center text-center mt-t2 gap-4">
         <a :href="instanceInfo.hosterCode" rel="noopener" target="_blank">
