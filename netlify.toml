@@ -1,0 +1,30 @@
+[dev]
+  autoLaunch = false
+  
+[build]
+  command = "npm run build"
+  publish = "dist"
+  environment = { NODE_VERSION = "16" }
+
+[[redirects]]
+  from = "/i-scdn-co/*"
+  to = "https://i.scdn.co/:splat"
+  status = 200
+[[redirects]]
+  from = "/mosaic-scdn-co/*"
+  to = "https://mosaic.scdn.co/:splat"
+  status = 200
+[[redirects]]
+  from = "/p-scdn-co/*"
+  to = "https://p.scdn.co/:splat"
+  status = 200
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Opting your Website out of Google's FLoC Network
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Permissions-Policy = "interest-cohort=()"
