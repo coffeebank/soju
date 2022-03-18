@@ -64,6 +64,12 @@ exports.handler = async (event, context) => {
   try {
     headers = await event.headers;
     data = await getData(headers.itemformat, headers.itemid, headers.itemtoken);
+    if (data == false) {
+      return {
+        statusCode: 500,
+        body: JSON.stringify({ error: 'Data is invalid' }),
+      };
+    }
     return { statusCode: 200, body: JSON.stringify({ data }) };
   } catch (error) {
     console.log(error);

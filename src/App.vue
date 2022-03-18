@@ -28,6 +28,7 @@
         >
       </div>
 
+      <div id="content"></div>
       <router-view v-slot="{ Component }">
         <transition name="fade" mode="out-in">
           <component :is="Component" />

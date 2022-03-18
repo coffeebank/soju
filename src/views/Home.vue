@@ -22,7 +22,7 @@
             <div class="grid grid-cols-1f3fa sm:block pb-2">
               <div class="relative rounded-sm shadow-2xl overflow-hidden transition duration-300 transform hover:scale-105">
                 <a :href="sitem.url" class="h-auto">
-                  <img :src="sitem.data.images[0].url" class="w-full h-auto" />
+                  <img :src="sitem.data.images[0].url || sitem.data.images.url" class="w-full h-auto" />
                 </a>
               </div>
               <div class="px-t2 sm:px-0 sm:pt-t2">
