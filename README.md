@@ -64,22 +64,24 @@ Soju is free, open source, and self-hostable. However, this comes with some big 
 Prerequisites:
 
 - Netlify account (free)
-- Spotify account + API key (free)
+- Spotify account + API key
 - A public electronic mail inbox or webpage with contact info, for DMCA and contact
 
 Steps:
 
 1. Click "Fork" on the top right corner
-1. Add your info under `instanceInfo` in `src/main.js` (contact info goes under `hosterSite`)
+1. Add your info under `instanceInfo` in `src/main.js`
 1. Go to Netlify (create an account if you haven't) and deploy the site
 1. Under Build settings > Environment variables, add the variables listed in `.env.example` (your Spotify API keys go here)
-1. Re-deploy your site
+1. Under Top Bar > Deploys > Trigger deploy > click "Clear cache and deploy site" to re-deploy the site
 
 <br />
 
 ### Development
 
 Fork the project, then install all dependencies using `npm install`.
+
+Copy the `.env.example` file to `.env` and fill in the values.
 
 Run the development server using `netlify dev`. Due to a bug, this currently requires Node 14-16 (not 17) for the server to run properly.
 
