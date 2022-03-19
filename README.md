@@ -59,7 +59,7 @@ Soju lets you explore music from Spotify on any device easily. Fetch a track's a
 Soju is free, open source, and self-hostable. However, this comes with some big caveats:
 
 - Soju relies heavily on Netlify Functions, which effectively restricts you to only hosting on Netlify at the moment.
-- Soju uses copyrighted data from Spotify, which means you must agree to the Spotify licenses by obtaining an API key, before you are safe to access and use the copyrighted data. Soju will not parse and does not endorse parsing the unauthenticated public Spotify Widget for any Spotify data.
+- Soju uses copyrighted data from Spotify, which means you must obtain a Spotify API key to use the data. Soju will not parse and does not endorse parsing the unauthenticated public Spotify Widget for any Spotify data.
 
 Prerequisites:
 
@@ -91,8 +91,8 @@ Run the development server using `netlify dev`. Due to a bug, this currently req
 
 Soju is licensed under the GPLv3 License, which allows changes as long as your source remains open-source.
 
-Soju is not endorsed by Spotify. Soju uses copyrighted data from Spotify, licensed through a Spotify Web API account.
+Soju is not endorsed by Spotify. Soju uses copyrighted data from the Spotify Web API under license.
 
 Feel free to modify Soju for white-label purposes, but please keep all credits per `LICENSE`.
 
-© 2021 - Present, by coffeebank.
+© 2021–Present, by coffeebank.

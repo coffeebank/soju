@@ -37,7 +37,7 @@
 
       <div class="text-center pt-24 pb-2">
         <div class="text-center pb-2 text-gray-600 text-sm">
-          &copy; Data from Spotify licensed using Spotify Web API
+          &copy; Data from Spotify Web API
         </div>
         <div class="text-center pb-2 text-gray-600">
           &#x2002;&#x4D;&#x61;&#x69;&#x6E;&#x74;&#x61;&#x69;&#x6E;&#x65;&#x64;&#x20;&#x62;&#x79;&#x20;{{ this.$store.state.instanceInfo.hosterName }}&#x2002;&copy;&#x2002;Soju, GPLv3 License

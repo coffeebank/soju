@@ -4,8 +4,8 @@
     <p class="text-lg sm:text-xl text-center text-gray-300 mb-t4">Soju lets you explore music from Spotify on any device easily. Fetch a track's album, compare playlists, and sample different songs quickly and easily.</p>
     <div class="w-full sm:w-3/4 lg:w-1/2 mx-auto p-6 rounded shadow bg-222222">
       <p class="text-center mb-t2"><a :href="instanceInfo.hosterLicense" rel="noopener" target="_blank" class="text-center text-gray-400 hover:text-gray-500 transition">&copy;&ensp;{{ copyYear }}&ensp;&middot;&ensp;Soju, GPLv3 License</a></p>
-      <p class="text-center text-gray-300 mb-t2">Soju is not endorsed by Spotify. All Spotify assets are retrieved using an authenticated connection to the Spotify Web API, or are unmodified public-facing websites.</p>
-      <p class="text-center text-gray-300 mb-t2">Soju is open source software licenced under the GPLv3, and supported by maintainers who keep Soju instances running.</p>
+      <p class="text-center text-gray-300 mb-t2">Soju is not endorsed by Spotify. All Spotify content is from the Spotify Web API, or unmodified public-facing websites.</p>
+      <p class="text-center text-gray-300 mb-t2">Soju is open source software licenced under the GPLv3, and supported by maintainers who run Soju instances.</p>
       <div class="flex flex-wrap items-center justify-center text-center mt-t4 gap-4">
 
         <!-- NOTE: To add your info on the site, please update `main.js` -->
@@ -74,34 +74,24 @@
   export default {
     data () {
       return {
-        termsOfUse: `Soju requires a Spotify API key in order to function. This is by design for using licensed content from Spotify's API. Other restrictions may apply, including but not limited to: using Spotify's content or accessing the Spotify API without first agreeing to any Spotify licenses; and allowing Spotify to enforce these Terms and Privacy Policies.
-
-        Soju will only use "Audio Preview Clips", which are 30 second preview clips for public use. For the purposes of Spotify's licenses, Soju does not and will not do "Streaming", which is defined as streaming/making available the full song.
-        
-        Soju fetches the most up-to-date content from Spotify to display at the time of request by a user. No data is collected or stored after the user closes the tab. Soju cannot access any data Spotify removes from its API.
-        
-        Soju does not and will not bypass geo-restrictions. Songs that are geo-blocked or otherwise restricted by the API will not play and show a crossed-out music note icon.
-        
-        Soju provides a link back to all content fetched from Spotify.
-        
-        Soju may display an unaltered Spotify webpage in its original form (outside of the control of Soju) when the API fails. This webpage is maintained by Spotify, who may place cookies, use tracking technologies, and restrict access to Spotify content within that webpage.
+        termsOfUse: `Soju uses copyrighted content from Spotify Web API. The Spotify API license limits your use and access of the Spotify API outside of what is provided by Soju, and lets Spotify enforce the Soju Terms of Use and Privacy Policy.
   
         THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW. EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU. SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.
 
         IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MODIFIES AND/OR CONVEYS THE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES, INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED TO LOSS OF DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER PROGRAMS), EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.`,
-        privacyPolicy: `Soju processes links you provide using Netlify CDN and Netlify Functions. Soju does not collect analytics from your user session; does not collect IP addresses or any personally identifiable information; and does not place cookies. All content you are served from Spotify is cleared after you close your tab.
+        privacyPolicy: `Soju processes links you provide, and returns all content from the Spotify API, through Netlify CDN and Netlify Functions. Soju does not collect analytics from your user session; does not collect IP addresses or any personally identifiable information; and does not place cookies. All content you are served from Spotify is cleared after you close your tab.
 
-        Soju does not collect, store, sell, or share any user data. With nothing to log or store, Soju does not support DNT (Do Not Track) and has nothing about you to delete (GDPR, CCPA). Netlify CDN processes your requests, which may or may not be outside of the US and EU.
+        Soju does not collect, store, sell, or share any user data, so doesn't support DNT (Do Not Track). Netlify CDN processes your requests, which may or may not be outside of the US and EU.
 
-        Spotify is a third party service integrated by Soju. When you choose to access any unaltered, public-facing webpages from Spotify through Soju, you consent to the following by Spotify: being tracked by analytics; having your IP address or personally identifiable information collected; and having cookies placed in your browser. Soju cannot control this because it is an unaltered, public-facing webpage by Spotify. For more details and to manage your data, see Spotify's Privacy Policy at https://www.spotify.com/privacy.
+        Spotify is a third party service integrated by Soju. When you choose to access any unmodified, public-facing webpages from Spotify through Soju, you consent to the following by Spotify: being tracked by analytics; having your IP address or personally identifiable information collected; and having cookies placed in your browser. Soju cannot control this because it is an unmodified, public-facing webpage by Spotify. For more details and to manage data Spotify collects, see Spotify's Privacy Policy at https://www.spotify.com/privacy.
 
         Contact Info:`,
         credits: [
           {
             title: 'Credits and Resources',
             sources: [
-              { title: "© 2021, Soju source code by coffeebank", url: "https://github.com/coffeebank/soju" },
-              { title: "© Data from Spotify licensed using Spotify Web API", url: "https://spotify.com/" },
+              { title: "© 2021–Present, Soju source code by coffeebank", url: "https://github.com/coffeebank/soju" },
+              { title: "© Data from Spotify Web API", url: "https://developer.spotify.com/" },
               { title: "Vue 3 template starter by web2033", url: "https://github.com/web2033/vite-vue3-tailwind-starter" },
               { title: "Logo image by Timothy Dykes on Unsplash", url: "https://unsplash.com/photos/ekPfOrUhNgs"},
               { title: "Icons by Material Design Icons", url: "https://materialdesignicons.com/" },
