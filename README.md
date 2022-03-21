@@ -8,7 +8,19 @@ Soju lets you explore music from Spotify on any device easily. Fetch a track's a
 
 ## How to Use
 
-**Simply [visit the website](#instances) and enter a Spotify link.**
+<div id="instances"></div>
+
+**Simply visit any Soju website and enter a Spotify link.**
+
+Some Soju sites may be ratelimited. If the main website isn't working, try another instance below:
+
+|Site|Official|
+|:---|:---|
+|<https://playsoju.netlify.app>|✅|
+
+<br />
+
+### Advanced
 
 To get a direct link, you can also add the url to a `?s=` query parameter like so:
 
@@ -23,17 +35,7 @@ Here's a list of query parameters. Many of these can be strung together using `?
 |?s=|str|Jump straight to processing a Spotify url|
 |?sa=|bool|Run all processing methods for an `?s=` url<br>*see `?method=` for more info*|
 |?sm=|str|Processing method for an `?s=` url<br>*see `?method=` for more info*|
-|?method=|str|Set default processing method for the browsing session<br><ul><li>**api** *(default)*: Uses Spotify Web API to fetch data</li><li>**embed**: Loads the Spotify media embed directly (fallback)</li></ul>|
-
-<br />
-
-## Instances
-
-Soju runs on Netlify Functions, which is ratelimited. If the main website isn't working, try another instance below:
-
-|Site|Official|
-|:---|:---|
-|<https://playsoju.netlify.app>|✅|
+|?method=|str|Set default processing method for the browsing session<br><ul><li>**api** *(default)*: Uses Spotify Web API to fetch data</li><li>**embed**: Loads a Spotify webpage directly (fallback)</li></ul>|
 
 <br />
 
@@ -41,14 +43,14 @@ Soju runs on Netlify Functions, which is ratelimited. If the main website isn't 
 
 On page load, a Spotify access token is retrieved using your Spotify API Key via Netlify Functions and cached in the user device's Vuex store for the session. The Spotify access token expires after an hour, and Spotify ratelimits users using this access token. All data from the session, including the access token, is cleared when the user closes the tab.
 
-Soju is a static site with no server backend. Soju relies heavily on Netlify's CDN and Netlify Functions to provide a fast and secure connection to the Spotify API.
+Soju is a static site with no server backend. To provide a secure connection to the Spotify API, Soju fetches and delivers all Spotify data from the API through Netlify Functions and Netlify CDN.
 
 Spotify License Limitations:
 - Soju will only use "Audio Preview Clips", which are 30 second preview clips for public use. For the purposes of Spotify's licenses, Soju does not and will not do "Streaming", which is defined as streaming/making available the full song.
 - Soju fetches the most up-to-date content from Spotify to display at the time of request by a user. No data is collected or stored after the user closes the tab. Soju cannot access any data Spotify removes from its API.
 - Soju does not and will not bypass geo-restrictions. Songs that are geo-blocked or otherwise restricted by the API will not play and show a crossed-out music note icon.
 - Soju provides a link back to all content fetched from Spotify.
-- Soju may display an unaltered Spotify webpage in its original form (outside of the control of Soju) when the API fails. This webpage is maintained by Spotify, who may place cookies, use tracking technologies, and restrict access to Spotify content within that webpage.
+- Soju may display an unmodified Spotify webpage in its original form (outside of the control of Soju) when the API fails. This webpage is maintained by Spotify, who may place cookies, use tracking technologies, and restrict access to Spotify content within that webpage.
 
 Soju lets you explore music from Spotify on any device easily. Fetch a track's album, compare playlists, and sample different songs quickly and easily.
 
@@ -58,8 +60,8 @@ Soju lets you explore music from Spotify on any device easily. Fetch a track's a
 
 Soju is free, open source, and self-hostable. However, this comes with some big caveats:
 
-- Soju relies heavily on Netlify Functions, which effectively restricts you to only hosting on Netlify at the moment.
-- Soju uses copyrighted data from Spotify, which means you must obtain a Spotify API key to use the data. Soju will not parse and does not endorse parsing the unauthenticated public Spotify Widget for any Spotify data.
+- Soju was designed for Netlify, which effectively restricts you to only hosting on Netlify at the moment.
+- Soju uses copyrighted content from Spotify, which means you must obtain a Spotify API key to use the data. Soju will not parse and does not endorse parsing any public Spotify webpages for any licensed Spotify content.
 
 Prerequisites:
 
@@ -89,9 +91,9 @@ Run the development server using `netlify dev`. Due to a bug, this currently req
 
 ## License
 
-Soju is licensed under the GPLv3 License, which allows changes as long as your source remains open-source.
+Soju is licensed under the GPLv3 License, which allows changes as long as your code remains open-source.
 
-Soju is not endorsed by Spotify. Soju uses copyrighted data from the Spotify Web API under license.
+Soju is not endorsed by Spotify. Soju uses copyrighted content from the Spotify Web API under license.
 
 Feel free to modify Soju for white-label purposes, but please keep all credits per `LICENSE`.
 

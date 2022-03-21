@@ -100,7 +100,7 @@
                 </div>
               </div>
               <div class="w-full text-right pt-3 pb-0">
-                <span class="text-sm italic text-gray-500 transition hover:text-gray-400 cursor-pointer" @click="getSpotifyDataEmbed()" title="Click here to reload this item using Spotify">Tracks not playing? Open with Spotify&ensp;▸</span>
+                <span class="text-sm italic text-gray-500 transition hover:text-gray-400 cursor-pointer" @click="getSpotifyDataEmbed()" title="Click here to reload this item using Spotify">Tracks not playing? Reload with Spotify&ensp;▸</span>
               </div>
             </div>
           </div>
