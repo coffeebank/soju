@@ -41,7 +41,10 @@ Here's a list of query parameters. Many of these can be strung together using `?
 
 ## Notices
 
-On page load, a Spotify access token is retrieved using your Spotify API Key via Netlify Functions and cached in the user device's Vuex store for the session. The Spotify access token expires after an hour, and Spotify ratelimits users using this access token. All data from the session, including the access token, is cleared when the user closes the tab.
+Soju lets you explore music from Spotify on any device, fetch a Spotify track's album, compare Spotify playlists, and sample different songs on Spotify quickly and easily.
+- Soju is NOT a replacement for Spotify Web Player, Soju is a companion service that lets you preview Spotify music for adding into Spotify
+- Soju is NOT designed to pull music from other sources, all music samples are from Spotify only
+- Soju is NOT designed to stream/download full music tracks
 
 Soju is a static site with no server backend. To provide a secure connection to the Spotify API, Soju fetches and delivers all Spotify data from the API through Netlify Functions and Netlify CDN.
 
@@ -52,7 +55,7 @@ Spotify License Limitations:
 - Soju provides a link back to all content fetched from Spotify.
 - Soju may display an unmodified Spotify webpage in its original form (outside of the control of Soju) when the API fails. This webpage is maintained by Spotify, who may place cookies, use tracking technologies, and restrict access to Spotify content within that webpage.
 
-Soju lets you explore music from Spotify on any device easily. Fetch a track's album, compare playlists, and sample different songs quickly and easily.
+On page load, a Spotify access token is retrieved using the website host's Spotify API Key via Netlify Functions and cached in the site visitor's Vuex store for use during the session. The Spotify access token expires after an hour, and Spotify ratelimits users using this access token. All data from the session, including the access token, is cleared when the user closes the tab.
 
 <br />
 
@@ -96,5 +99,7 @@ Soju is licensed under the GPLv3 License, which allows changes as long as your c
 Soju is not endorsed by Spotify. Soju uses copyrighted content from the Spotify Web API under license.
 
 Feel free to modify Soju for white-label purposes, but please keep all credits per `LICENSE`.
+
+This was an educational project exploring Vue/Vite, Nodejs, and the Spotify Web API. All code has been open-sourced in the hopes that this software can be useful to someone. If there are any legal questions (DMCA, license, white-label, etc.) please send them to **sojumail [@] catdev.anonaddy.com**.
 
 © 2021–Present, by coffeebank.
