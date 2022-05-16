@@ -208,7 +208,7 @@
         }
 
         // let idFinder = /(?<=com\/\w+\/)\w+(?=\?|$)/m;
-        let idFinder = /\/\w{14,26}(?=\?|$)/m;
+        let idFinder = /\/\w{14,26}(?=\?|\/\?|\/$|$)/m;
         let idResults;
         if ((idResults = idFinder.exec(this.url)) !== null) {
           idResults.forEach((idRes) => {
