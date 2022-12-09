@@ -7,7 +7,7 @@
             "exampleUrl": "https://open.spotify.com/track/4cOdK2wGLETKBW3PvgPWqT",
             "exampleResult": "https://playsoju.netlify.app/?s=https://open.spotify.com/track/4cOdK2wGLETKBW3PvgPWqT",
             "error": null,
-            "includePattern": "https:\\/\\/open\\.spotify\\.com(\\/|embed\\/)(track|album|playlist)\\/(\\w{14,26})(?=\\?|\\/\\?|\\/$|$)",
+            "includePattern": "https:\\/\\/open\\.spotify\\.com(\\/|\\/embed\\/)(track|album|playlist)\\/(\\w{14,26})(?=\\?|\\/\\?|\\/$|$)",
             "excludePattern": "",
             "patternDesc": "Redirect Spotify links to Soju",
             "redirectUrl": "https://playsoju.netlify.app/?s=https://open.spotify.com/$2/$3",
