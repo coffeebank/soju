@@ -1,0 +1,23 @@
+{
+    "createdBy": "Redirector v3.5.3",
+    "createdAt": "2022-12-09T07:00:00.000Z",
+    "redirects": [
+        {
+            "description": "🎧 Soju Redirect for Spotify",
+            "exampleUrl": "https://open.spotify.com/track/4cOdK2wGLETKBW3PvgPWqT",
+            "exampleResult": "https://playsoju.netlify.app/?s=https://open.spotify.com/track/4cOdK2wGLETKBW3PvgPWqT",
+            "error": null,
+            "includePattern": "https:\\/\\/open\\.spotify\\.com(\\/|embed\\/)(track|album|playlist)\\/(\\w{14,26})(?=\\?|\\/\\?|\\/$|$)",
+            "excludePattern": "",
+            "patternDesc": "Redirect Spotify links to Soju",
+            "redirectUrl": "https://playsoju.netlify.app/?s=https://open.spotify.com/$2/$3",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame"
+            ]
+        }
+    ]
+}
