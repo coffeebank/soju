@@ -2,8 +2,8 @@
 
 Soju lets you explore music from Spotify on any device easily. Fetch a track's album, compare playlists, and sample different songs quickly and easily.
 
-[![Visit Soju site](https://img.shields.io/badge/%20Visit%2FUse%20Soju%20Website-▸-df0e14?style=for-the-badge&logo=spotify&logoColor=white&logoWidth=25)](https://playsoju.netlify.app) 
-[![Add to Firefox](https://img.shields.io/badge/%20Add%20to%20Firefox-▸-FE7C38?style=for-the-badge&logo=firefox&logoColor=white&logoWidth=25)](https://addons.mozilla.org/en-US/firefox/addon/soju-redirect/)
+[![Visit Soju site](https://img.shields.io/badge/%20Visit%2FUse%20Soju%20Website-▸-df0e14?style=for-the-badge&logo=spotify&logoColor=white&logoWidth=25)](https://playsoju.netlify.app)  
+[![Import to Redirector](https://img.shields.io/badge/%20Import%20to%20Redirector-▸-3C4F45?style=for-the-badge&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABVklEQVRYR8XXz1GEMBQG8PfN5K4l2IF2oBxerroViCVYgZZgB1LCnl8ObAmUsC3smUOcOAOymjWQP8AVMt+P5JEXQBtf2DifRoCIfAC4XRF0UkrVU8ABwP1KgJO19kFr3W0BGMPdy64NOAsPAV6JqItZEmutr57+hIcAFTMflgJEpAHw/GucNzw7YGl4VkBMeDaAMeadiN7mTvv0uf++glk1ICI1gM+Y8OQZSA1PAuQIjwbkCk8BdJ7GtWfm3dJ9I6oI27a97vveNa+z7mmtbbTWL0sQUQAXkAsRDciFSALkQCQDYhBu29Za19Ffga/I5tbE0DOY+fvls8zAAAohpg2rCCCwHEcANwO2GMAFiMgdAHeYubq0JxQFzEEUBziEMWZPRI++WSgOuHBCGi1FAaFwp/AB3MlmrFKlVFNV1XFJY5ms/VNoHDO7Y9zPPhAaUOr+5n/HX7flaX0aYXJBAAAAAElFTkSuQmCC&logoColor=white&logoWidth=25)](https://github.com/coffeebank/soju/raw/redirect/soju-redirect.json)
 
 [<img src="/public/media/preview.png" width="75%" />](#instances)
 
