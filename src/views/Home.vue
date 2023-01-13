@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-auto w-full md:w-4/5 lg:w-3/4 2xl:w-1/2">
+  <div class="mx-auto w-full md:w-4/5 lg:w-3/4 2xl:w-full max-w-[1200px]">
 
     <div class="flex flex-no-wrap justify-between items-center pt-t4 pb-t2">
       <h1 class="font-semibold text-3xl tracking-tighter">Play a Sample</h1>

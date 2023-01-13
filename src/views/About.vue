@@ -1,5 +1,5 @@
 <template>
-  <div class="about w-full px-t2 sm:px-t4 md:px-t8 py-t4 sm:py-t6">
+  <div class="about w-full px-t2 sm:px-t4 md:px-t8 py-t4 sm:py-t6 mx-auto max-w-[1200px]">
     <h1 class="text-xl sm:text-3xl mb-t4 text-center">About &amp; Credits</h1>
     <p class="text-lg sm:text-xl text-center text-gray-300 mb-t4">Soju lets you explore music from Spotify on any device easily. Fetch a track's album, compare playlists, and sample different songs quickly and easily.</p>
     <div class="w-full sm:w-3/4 lg:w-1/2 mx-auto p-6 rounded shadow bg-222222">
